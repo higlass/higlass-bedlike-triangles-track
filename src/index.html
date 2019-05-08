@@ -28,7 +28,7 @@
   <meta property="og:image" content="https://raw.githubusercontent.com/flekschas/higlass-geojson/master/teaser.jpg" />
 
   <title>HiGlass Labelled Points Track</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="hglib.css">
 
   <style type="text/css">
@@ -50,6 +50,7 @@
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.8.2/pixi.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/0.32.1/react-bootstrap.min.js"></script>
+<script src="https://unpkg.com/higlass-multivec@0.2.0/dist/higlass-multivec.js"></script>
 </head>
 <body>
   <div id="demo"></div>
@@ -60,146 +61,514 @@ const testViewConfig =
 {
   "editable": true,
   "trackSourceServers": [
-    "/api/v1",
     "http://higlass.io/api/v1"
   ],
   "exportViewUrl": "/api/v1/viewconfs",
   "views": [
     {
       "initialXDomain": [
-        31424.209714754983,
-        31516.869302818373
+        45218271.357378624,
+        158296237.6328733
       ],
       "initialYDomain": [
-        30829.58497677741,
-        30942.333364420938
+        -252408142.5109937,
+        -252408142.5109937
       ],
       "tracks": {
         "top": [
           {
-            "type": "linear-labels",
-            "uid": "OwWYxZ96SEiKJZiGBCHfIg",
-            "tilesetUid": "ZPIL0W2NTyadgTPMqfPqnw",
-            "server": "http://resgen.io/api/v1",
+            "name": "Rao et al. (2014) GM12878 DpnII (allreps) 1kb",
+            "created": "2017-02-03T03:09:23.091954Z",
+            "project": "b'JXi3SvxtRPe3Uk5Da6GaiQ'",
+            "project_name": "Rao et al. 2014",
+            "description": "",
+            "server": "http://higlass.io/api/v1",
+            "tilesetUid": "ODA1VxMMQqOMC-SizmxjWg",
+            "uid": "PrPw_PWsS_ujbAY1VC-8Eg",
+            "type": "horizontal-heatmap",
             "options": {
-              "name": "labels.h5",
-              "textAngle": 45
+              "backgroundColor": "#eeeeee",
+              "labelPosition": "bottomRight",
+              "labelLeftMargin": 0,
+              "labelRightMargin": 0,
+              "labelTopMargin": 0,
+              "labelBottomMargin": 0,
+              "labelColor": "black",
+              "colorRange": [
+                "white",
+                "rgba(245,166,35,1.0)",
+                "rgba(208,2,27,1.0)",
+                "black"
+              ],
+              "maxZoom": null,
+              "trackBorderWidth": 0,
+              "trackBorderColor": "black",
+              "name": "Rao et al. (2014) GM12878 DpnII (allreps) 1kb"
             },
-            "name": "labels.h5",
-            "width": 484,
-            "height": 57,
-            "position": "top"
-          }
-        ],
-        "left": [
-          {
-            "type": "linear-labels",
-            "uid": "MgSKpvslQpu8isHaanm6Ww",
-            "tilesetUid": "ZPIL0W2NTyadgTPMqfPqnw",
-            "server": "http://resgen.io/api/v1",
-            "options": {
-              "name": "labels.h5"
-            },
-            "name": "labels.h5",
-            "position": "left",
-            "width": 84,
-            "height": 449
-          }
-        ],
-        "center": [
-          {
-            "uid": "OiK3kxpRRQSqvsXaQg1qjA",
-            "type": "combined",
-            "contents": [
+            "position": "top",
+            "width": 997,
+            "height": 237,
+            "transforms": [
               {
-                "type": "heatmap",
-                "uid": "Fwu650FiSq61Ij7f2J6W1Q",
-                "tilesetUid": "Bu6Djvt9T_mgZPHLig3NfQ",
-                "server": "http://resgen.io/api/v1",
-                "options": {
-                  "backgroundColor": "#eeeeee",
-                  "labelPosition": "bottomRight",
-                  "labelLeftMargin": 0,
-                  "labelRightMargin": 0,
-                  "labelTopMargin": 0,
-                  "labelBottomMargin": 0,
-                  "colorRange": [
-                    "white",
-                    "rgba(245,166,35,1.0)",
-                    "rgba(208,2,27,1.0)",
-                    "black"
-                  ],
-                  "maxZoom": null,
-                  "colorbarPosition": "topRight",
-                  "trackBorderWidth": 0,
-                  "trackBorderColor": "black",
-                  "heatmapValueScaling": "log",
-                  "showMousePosition": false,
-                  "mousePositionColor": "#999999",
-                  "showTooltip": false,
-                  "name": "blah_all.h5",
-                  "scaleStartPercent": "0.00000",
-                  "scaleEndPercent": "1.00000"
-                },
-                "width": 515,
-                "height": 380,
-                "name": "blah_all.h5",
-                "resolutions": [
-                  1,
-                  128,
-                  16,
-                  2,
-                  256,
-                  32,
-                  4,
-                  512,
-                  64,
-                  8
-                ],
-                "position": "center"
+                "name": "ICE",
+                "value": "weight"
               }
-            ],
-            "position": "center",
+            ]
+          },
+          {
+            "name": "Gene Annotations (hg19)",
+            "created": "2017-02-05T19:31:52.412319Z",
+            "project": "b'BB_5KhDmTO2qTN7XWb0FPg'",
+            "project_name": "Gene Annotations",
+            "description": "",
+            "server": "http://higlass.io/api/v1",
+            "tilesetUid": "OHJakQICQD6gTD7skx4EWA",
+            "uid": "BJhoh4h_RWOabuM9gL6xOg",
+            "type": "horizontal-gene-annotations",
+            "options": {
+              "fontSize": 11,
+              "labelColor": "black",
+              "labelPosition": "hidden",
+              "labelLeftMargin": 0,
+              "labelRightMargin": 0,
+              "labelTopMargin": 0,
+              "labelBottomMargin": 0,
+              "plusStrandColor": "blue",
+              "minusStrandColor": "red",
+              "trackBorderWidth": 0,
+              "trackBorderColor": "black",
+              "showMousePosition": false,
+              "mousePositionColor": "#999999",
+              "geneAnnotationHeight": 10,
+              "geneLabelPosition": "outside",
+              "geneStrandSpacing": 4,
+              "name": "Gene Annotations (hg19)"
+            },
+            "position": "top",
+            "width": 20,
+            "height": 55,
+            "header": ""
+          },
+          {
+            "type": "top-axis",
+            "height": 25,
+            "position": "top",
+            "uid": "RnzLU68iQ0SUW6vjjMEOFA",
+            "name": "Top Axis",
             "options": {},
-            "width": 515,
-            "height": 380
+            "width": 997
+          },
+          {
+            "type": "bedlike-triangles",
+            "uid": "Jaf0-Dc6RP6rw3uCLCQU1g",
+            "tilesetUid": "UEIibC20TOGc5SiM7AI71Q",
+            "server": "http://resgen.io/api/v1",
+            "options": {
+              "fillColor": "blue",
+              "axisPositionHorizontal": "right",
+              "labelColor": "black",
+              "labelPosition": "hidden",
+              "labelLeftMargin": 0,
+              "labelRightMargin": 0,
+              "labelTopMargin": 0,
+              "labelBottomMargin": 0,
+              "trackBorderWidth": 0,
+              "trackBorderColor": "black",
+              "valueColumn": null,
+              "colorEncoding": false,
+              "colorRange": [
+                "#000000",
+                "#652537",
+                "#bf5458",
+                "#fba273",
+                "#ffffe0"
+              ],
+              "colorEncodingRange": false,
+              "name": "FIB.CRD.bed.beddb",
+              "rectangleDomainFillColor": "grey",
+              "rectangleDomainStrokeColor": "black",
+              "rectangleDomainOpacity": 0.6,
+              "minSquareSize": "none"
+            },
+            "name": "short.bed.beddb",
+            "position": "top",
+            "width": 997,
+            "height": 358,
+            "header": "1\t2\t3\t4\t5\t6\t7\t8"
           }
         ],
+        "left": [],
+        "center": [],
         "bottom": [],
         "right": [],
-        "whole": [
-          {
-            "type": "vertical-rule",
-            "x": 921.2312492721725,
-            "position": "whole",
-            "options": {},
-            "uid": "X8dwPPE8QMWbBUqS0MSD9Q",
-            "name": "Vertical Rule",
-            "width": 515,
-            "height": 428
-          }
-        ],
+        "whole": [],
         "gallery": []
       },
       "layout": {
-        "w": 12,
-        "h": 6,
+        "w": 4,
+        "h": 10,
         "x": 0,
         "y": 0,
-        "i": "HFb_qbptQs2ys22wnXRbpA",
+        "i": "GnUCzjmwRdqn6kYlzhpolg",
         "moved": false,
         "static": false
       },
-      "uid": "HFb_qbptQs2ys22wnXRbpA"
+      "uid": "GnUCzjmwRdqn6kYlzhpolg"
+    },
+    {
+      "initialXDomain": [
+        45218271.357380144,
+        158296237.63287178
+      ],
+      "initialYDomain": [
+        -252408142.51099366,
+        -252408142.51099366
+      ],
+      "tracks": {
+        "top": [
+          {
+            "name": "Rao et al. (2014) GM12878 DpnII (allreps) 1kb",
+            "created": "2017-02-03T03:09:23.091954Z",
+            "project": "b'JXi3SvxtRPe3Uk5Da6GaiQ'",
+            "project_name": "Rao et al. 2014",
+            "description": "",
+            "server": "http://higlass.io/api/v1",
+            "tilesetUid": "ODA1VxMMQqOMC-SizmxjWg",
+            "uid": "PrPw_PWsS_ujbAY1VC-8Eg",
+            "type": "horizontal-heatmap",
+            "options": {
+              "backgroundColor": "#eeeeee",
+              "labelPosition": "bottomRight",
+              "labelLeftMargin": 0,
+              "labelRightMargin": 0,
+              "labelTopMargin": 0,
+              "labelBottomMargin": 0,
+              "labelColor": "black",
+              "colorRange": [
+                "white",
+                "rgba(245,166,35,1.0)",
+                "rgba(208,2,27,1.0)",
+                "black"
+              ],
+              "maxZoom": null,
+              "trackBorderWidth": 0,
+              "trackBorderColor": "black",
+              "name": "Rao et al. (2014) GM12878 DpnII (allreps) 1kb"
+            },
+            "position": "top",
+            "width": 997,
+            "height": 237,
+            "transforms": [
+              {
+                "name": "ICE",
+                "value": "weight"
+              }
+            ]
+          },
+          {
+            "name": "Gene Annotations (hg19)",
+            "created": "2017-02-05T19:31:52.412319Z",
+            "project": "b'BB_5KhDmTO2qTN7XWb0FPg'",
+            "project_name": "Gene Annotations",
+            "description": "",
+            "server": "http://higlass.io/api/v1",
+            "tilesetUid": "OHJakQICQD6gTD7skx4EWA",
+            "uid": "BJhoh4h_RWOabuM9gL6xOg",
+            "type": "horizontal-gene-annotations",
+            "options": {
+              "fontSize": 11,
+              "labelColor": "black",
+              "labelPosition": "hidden",
+              "labelLeftMargin": 0,
+              "labelRightMargin": 0,
+              "labelTopMargin": 0,
+              "labelBottomMargin": 0,
+              "plusStrandColor": "blue",
+              "minusStrandColor": "red",
+              "trackBorderWidth": 0,
+              "trackBorderColor": "black",
+              "showMousePosition": false,
+              "mousePositionColor": "#999999",
+              "geneAnnotationHeight": 10,
+              "geneLabelPosition": "outside",
+              "geneStrandSpacing": 4,
+              "name": "Gene Annotations (hg19)"
+            },
+            "position": "top",
+            "width": 20,
+            "height": 55,
+            "header": ""
+          },
+          {
+            "type": "top-axis",
+            "height": 25,
+            "position": "top",
+            "uid": "RnzLU68iQ0SUW6vjjMEOFA",
+            "name": "Top Axis",
+            "options": {},
+            "width": 997
+          },
+          {
+            "type": "bedlike-triangles",
+            "uid": "Jaf0-Dc6RP6rw3uCLCQU1g",
+            "tilesetUid": "DpQz1TT4Rc-zBJPZhiY30A",
+            "server": "http://resgen.io/api/v1",
+            "options": {
+              "fillColor": "blue",
+              "axisPositionHorizontal": "right",
+              "labelColor": "black",
+              "labelPosition": "hidden",
+              "labelLeftMargin": 0,
+              "labelRightMargin": 0,
+              "labelTopMargin": 0,
+              "labelBottomMargin": 0,
+              "trackBorderWidth": 0,
+              "trackBorderColor": "black",
+              "valueColumn": null,
+              "colorEncoding": false,
+              "colorRange": [
+                "#000000",
+                "#652537",
+                "#bf5458",
+                "#fba273",
+                "#ffffe0"
+              ],
+              "colorEncodingRange": false,
+              "name": "FIB.CRD.bed.beddb",
+              "rectangleDomainFillColor": "grey",
+              "rectangleDomainStrokeColor": "black",
+              "rectangleDomainOpacity": 0.6,
+              "minSquareSize": "none"
+            },
+            "name": "short.bed.beddb",
+            "position": "top",
+            "width": 997,
+            "height": 358,
+            "header": "1\t2\t3\t4\t5\t6\t7\t8"
+          }
+        ],
+        "left": [],
+        "center": [],
+        "bottom": [],
+        "right": [],
+        "whole": [],
+        "gallery": []
+      },
+      "layout": {
+        "w": 4,
+        "h": 10,
+        "x": 4,
+        "y": 0,
+        "i": "b3uGY5wOTCCkS45NW_vgvg",
+        "moved": false,
+        "static": false
+      },
+      "uid": "b3uGY5wOTCCkS45NW_vgvg"
+    },
+    {
+      "initialXDomain": [
+        45218271.35738,
+        158296237.6328719
+      ],
+      "initialYDomain": [
+        -252408142.51099366,
+        -252408142.51099366
+      ],
+      "tracks": {
+        "top": [
+          {
+            "name": "Rao et al. (2014) GM12878 DpnII (allreps) 1kb",
+            "created": "2017-02-03T03:09:23.091954Z",
+            "project": "b'JXi3SvxtRPe3Uk5Da6GaiQ'",
+            "project_name": "Rao et al. 2014",
+            "description": "",
+            "server": "http://higlass.io/api/v1",
+            "tilesetUid": "ODA1VxMMQqOMC-SizmxjWg",
+            "uid": "PrPw_PWsS_ujbAY1VC-8Eg",
+            "type": "horizontal-heatmap",
+            "options": {
+              "backgroundColor": "#eeeeee",
+              "labelPosition": "bottomRight",
+              "labelLeftMargin": 0,
+              "labelRightMargin": 0,
+              "labelTopMargin": 0,
+              "labelBottomMargin": 0,
+              "labelColor": "black",
+              "colorRange": [
+                "white",
+                "rgba(245,166,35,1.0)",
+                "rgba(208,2,27,1.0)",
+                "black"
+              ],
+              "maxZoom": null,
+              "trackBorderWidth": 0,
+              "trackBorderColor": "black",
+              "name": "Rao et al. (2014) GM12878 DpnII (allreps) 1kb"
+            },
+            "position": "top",
+            "width": 997,
+            "height": 237,
+            "transforms": [
+              {
+                "name": "ICE",
+                "value": "weight"
+              }
+            ]
+          },
+          {
+            "name": "Gene Annotations (hg19)",
+            "created": "2017-02-05T19:31:52.412319Z",
+            "project": "b'BB_5KhDmTO2qTN7XWb0FPg'",
+            "project_name": "Gene Annotations",
+            "description": "",
+            "server": "http://higlass.io/api/v1",
+            "tilesetUid": "OHJakQICQD6gTD7skx4EWA",
+            "uid": "BJhoh4h_RWOabuM9gL6xOg",
+            "type": "horizontal-gene-annotations",
+            "options": {
+              "fontSize": 11,
+              "labelColor": "black",
+              "labelPosition": "hidden",
+              "labelLeftMargin": 0,
+              "labelRightMargin": 0,
+              "labelTopMargin": 0,
+              "labelBottomMargin": 0,
+              "plusStrandColor": "blue",
+              "minusStrandColor": "red",
+              "trackBorderWidth": 0,
+              "trackBorderColor": "black",
+              "showMousePosition": false,
+              "mousePositionColor": "#999999",
+              "geneAnnotationHeight": 10,
+              "geneLabelPosition": "outside",
+              "geneStrandSpacing": 4,
+              "name": "Gene Annotations (hg19)"
+            },
+            "position": "top",
+            "width": 20,
+            "height": 55,
+            "header": ""
+          },
+          {
+            "type": "top-axis",
+            "height": 25,
+            "position": "top",
+            "uid": "RnzLU68iQ0SUW6vjjMEOFA",
+            "name": "Top Axis",
+            "options": {},
+            "width": 997
+          },
+          {
+            "type": "bedlike-triangles",
+            "uid": "Jaf0-Dc6RP6rw3uCLCQU1g",
+            "tilesetUid": "cFGZ8CMeSBSxJ4gyur6PEA",
+            "server": "http://resgen.io/api/v1",
+            "options": {
+              "fillColor": "blue",
+              "axisPositionHorizontal": "right",
+              "labelColor": "black",
+              "labelPosition": "hidden",
+              "labelLeftMargin": 0,
+              "labelRightMargin": 0,
+              "labelTopMargin": 0,
+              "labelBottomMargin": 0,
+              "trackBorderWidth": 0,
+              "trackBorderColor": "black",
+              "valueColumn": null,
+              "colorEncoding": false,
+              "colorRange": [
+                "#000000",
+                "#652537",
+                "#bf5458",
+                "#fba273",
+                "#ffffe0"
+              ],
+              "colorEncodingRange": false,
+              "name": "FIB.CRD.bed.beddb",
+              "rectangleDomainFillColor": "grey",
+              "rectangleDomainStrokeColor": "black",
+              "rectangleDomainOpacity": 0.6,
+              "minSquareSize": "none"
+            },
+            "name": "short.bed.beddb",
+            "position": "top",
+            "width": 997,
+            "height": 358,
+            "header": "1\t2\t3\t4\t5\t6\t7\t8"
+          }
+        ],
+        "left": [],
+        "center": [],
+        "bottom": [],
+        "right": [],
+        "whole": [],
+        "gallery": []
+      },
+      "layout": {
+        "w": 4,
+        "h": 10,
+        "x": 8,
+        "y": 0,
+        "i": "Xlg56QC3T2uo7og8ALHf6g",
+        "moved": false,
+        "static": false
+      },
+      "uid": "Xlg56QC3T2uo7og8ALHf6g"
     }
   ],
   "zoomLocks": {
-    "locksByViewUid": {},
-    "locksDict": {}
+    "locksByViewUid": {
+      "b3uGY5wOTCCkS45NW_vgvg": "UZOSasYATNK_qw2VcDIFzg",
+      "GnUCzjmwRdqn6kYlzhpolg": "UZOSasYATNK_qw2VcDIFzg",
+      "Xlg56QC3T2uo7og8ALHf6g": "UZOSasYATNK_qw2VcDIFzg"
+    },
+    "locksDict": {
+      "UZOSasYATNK_qw2VcDIFzg": {
+        "Xlg56QC3T2uo7og8ALHf6g": [
+          120161915.60371307,
+          -177651065.43075323,
+          733953.9319394119
+        ],
+        "b3uGY5wOTCCkS45NW_vgvg": [
+          120161915.60371307,
+          -177651065.43075317,
+          733953.9319394175
+        ],
+        "GnUCzjmwRdqn6kYlzhpolg": [
+          120161915.60371307,
+          -177651065.43075317,
+          733953.9319394231
+        ],
+        "uid": "UZOSasYATNK_qw2VcDIFzg"
+      }
+    }
   },
   "locationLocks": {
-    "locksByViewUid": {},
-    "locksDict": {}
+    "locksByViewUid": {
+      "b3uGY5wOTCCkS45NW_vgvg": "RQDr0BT2RSaOvzmSOjep1g",
+      "GnUCzjmwRdqn6kYlzhpolg": "RQDr0BT2RSaOvzmSOjep1g",
+      "Xlg56QC3T2uo7og8ALHf6g": "RQDr0BT2RSaOvzmSOjep1g"
+    },
+    "locksDict": {
+      "RQDr0BT2RSaOvzmSOjep1g": {
+        "Xlg56QC3T2uo7og8ALHf6g": [
+          120161915.60371307,
+          -177651065.43075323,
+          733953.9319394119
+        ],
+        "b3uGY5wOTCCkS45NW_vgvg": [
+          120161915.60371307,
+          -177651065.43075317,
+          733953.9319394175
+        ],
+        "GnUCzjmwRdqn6kYlzhpolg": [
+          120161915.60371307,
+          -177651065.43075317,
+          733953.9319394231
+        ],
+        "uid": "RQDr0BT2RSaOvzmSOjep1g"
+      }
+    }
   },
   "valueScaleLocks": {
     "locksByViewUid": {

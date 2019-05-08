@@ -1,9 +1,9 @@
 import register from 'higlass-register';
 
-import LinearLabelsTrack from './LinearLabelsTrack';
+import BedLikeTrianglesTrack from './BedLikeTrianglesTrack';
 
 register({
-  name: 'LinearLabelsTrack',
-  track: LinearLabelsTrack,
-  config: LinearLabelsTrack.config,
+  name: 'BedLikeTrianglesTrack',
+  track: BedLikeTrianglesTrack,
+  config: BedLikeTrianglesTrack.config,
 });
