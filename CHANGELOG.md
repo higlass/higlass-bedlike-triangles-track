@@ -1,8 +1,6 @@
-v0.1.7
+v0.1.2
 
-- Configurable x field in options.xPosField
-- Configurable y field in options.yPosField
-- Configurable label field in options.labelField
+- Avoid bundling PIXI, slugid, and d3-scale
 
 v0.1.0
 

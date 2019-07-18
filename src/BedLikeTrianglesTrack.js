@@ -1,7 +1,4 @@
 import boxIntersect from 'box-intersect';
-import * as PIXI from 'pixi.js';
-import slugid from 'slugid';
-import { scaleLog, scaleLinear } from 'd3-scale';
 
 const calculate1DZoomLevel = (tilesetInfo, xScale, tileProxy, maxZoom = null) => {
   // offset by 2 because 1D tiles are more dense than 2D tiles
@@ -67,7 +64,7 @@ const calculate1DVisibleTiles = (tilesetInfo, xScale, tileProxy) => {
   return tiles;
 };
 
-const tileToLocalId1D = tile => `${tile.join('.')}`; 
+const tileToLocalId1D = tile => `${tile.join('.')}`;
 
 const tileToRemoteId1D = tile => `${tile.join('.')}`;
 
@@ -77,6 +74,10 @@ const BedLikeTrianglesTrack = (HGC, ...args) => {
       'Uncaught TypeError: Class constructor cannot be invoked without "new"',
     );
   }
+
+  // Services
+  const { PIXI, slugid, d3Scale } = HGC.libraries;
+  const { scaleLog } = d3Scale;
 
   class BedLikeTrianglesTrackClass extends HGC.tracks.TiledPixiTrack {
     initTile(tile) {
