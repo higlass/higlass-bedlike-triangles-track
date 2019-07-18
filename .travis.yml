@@ -27,4 +27,4 @@ deploy:
       secure: Vpb5PpRXE9ZIxwbD3hiFMiJKdoFVaV5eqdEQBaKLNP5Hz17mUs6F1CAfdfWPyoz1oWxjBwtkkaUcNFzBgL5Nkt7kNLwcFABYWf2GW+vYqhmze7hgi3xhDdk6hT3gPCcdG4MTfOCILatlASIwG7VhuNW7cFD7ohPJtvpbTn+zHkSfld/Pp7ZL5+Kt/D5BJ9lNhFRlTiuGagGUAoU/Xxfgn5UCnAlklhHYMSJrrilhc+9uf0ghCkYstsm5RN9yNdGHYbmQgX+n/k/Gd3zar65inJ6ioDnnLNmJ8Poc5IsWdy2eH/h00LTA39UEItgylrVO2nFCAo1Z/7zR6dM6Mqdcqdv9kK8TvdIvWfndPA1fjRWEqPeqvTbTA7H1hDhmnDQuCQXREALxozhaqFnIkKZnQCCbD/GHjJoqNbjWfa6/p6bJw8345qfjg8xpWjVpMXbcqzVBCAOZFoYs86PnmJfpgoTtVDPxUwKEa4xMf8nocUyBc1ETdjkoM9GQIHA7C5moThfjzEdu8xvghOY+s51XveuqnSW4C5ADC5jnOulq/qAqr9SjNOHGr7uo7x86lXc5TmXOCjsHyHhjvjTztU2glGBqIVXq4DE2xiai3V5pax649aer6QD2kNWf/PKXSUbGi7N9tswc/FwYYVgamCr0ENQTpVTQUO1C1aDp/TaTC0g=
     file: dist.zip
     on:
-      repo: pkerpedjiev/higlass-labelled-points-tracks
+      repo: higlass/higlass-labelled-points-tracks
